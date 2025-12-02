@@ -32,7 +32,4 @@ int main(){
 
     cout <<" a "<<op<<" b = "<<c<<endl;
         return 0;
-
-
-    
 }
