@@ -1,6 +1,6 @@
 FROM gcc:latest
 COPY . .
-RUN gcc Calculator.cpp -o calculator.exe
+RUN g++ Calculator.cpp -o calculator.exe
 CMD ["./calculator.exe"]
 
 

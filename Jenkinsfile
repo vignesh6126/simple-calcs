@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage("compile") {
             steps {
-                bat "gcc Calculator.cpp -o calculator.exe"
+                bat "g++ Calculator.cpp -o calculator.exe"
                 bat "calculator.exe"
             }
         }
