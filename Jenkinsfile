@@ -1,5 +1,5 @@
 pipeline{
-    aget any{
+    agent any{
         environments{
             DOCKER_CREDS = credentials('docker-user')
             IMAGE_NAME = "vignesg043/simple-calc-app"
