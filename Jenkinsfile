@@ -5,7 +5,7 @@ pipeline{
             IMAGE_NAME = "vignesg043/simple-calc-app"
             TAG = "latest"
         }
-    }
+    
     stages{
         stage("compile"){
             bat "gcc Calculator.c -o calculator.exe"
@@ -19,6 +19,7 @@ pipeline{
             bat "docker login -u %DOCKER_CREDS_USR% --password-stdin"
             bat "docker push %IMAGE_NAME%:%TAG%"
         }
+    }
     }
 }    
      
